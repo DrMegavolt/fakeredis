@@ -247,6 +247,16 @@ These do nothing but return `OK`:
     BGSAVE
     SAVE
 
+### Persistance
+Save entire dataset to file
+```
+cl.send_command('FAKE_DUMP_TO_FILE', ['/path/to/file.data'])
+```
+
+Restore content from file
+```
+cl.send_command('FAKE_RESTORE_FROM_FILE', ['/path/to/file.data'])
+```
 
 ### What's missing:
 
